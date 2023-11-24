@@ -1,0 +1,444 @@
+Questão 1:
+Uma classe em Java é um modelo ou especificação que define as propriedades de objetos. Pode ser definida também como um conjunto de objetos que possuem ao menos uma característica em comum.
+Por outro lado, um objeto é a representação ou instância de uma classe. Podem ser agrupados dentro de uma mesma classe, mas cada objeto terá valores de atributos diferentes, o que permite estruturar o código em módulos autônomos.
+
+EXEMPLOS EM JAVA
+Exemplo 1:
+// Definição da classe Cachorro
+class Cachorro {
+	// Método latir da classe Cachorro
+	public void latir() {
+    	System.out.println("Au au!");
+	}
+}
+
+// Uso da classe Cachorro
+public class ExemploCachorro {
+	public static void main(String[] args) {
+    	// Criando objeto da classe Cachorro
+    	Cachorro meuCachorro = new Cachorro();
+
+    	// Chamando o método latir do objeto
+    	meuCachorro.latir();
+	}
+}
+
+Exemplo 2:
+// Definição da classe Caneta
+class Caneta {
+	// Propriedade cor da classe Caneta
+	String cor;
+
+	// Método escrever da classe Caneta
+	public void escrever() {
+    	System.out.println("Escrevendo com uma caneta " + cor);
+	}
+}
+
+// Uso da classe Caneta
+public class ExemploCaneta {
+	public static void main(String[] args) {
+    	// Criando objeto da classe Caneta
+    	Caneta minhaCaneta = new Caneta();
+
+    	// Atribuindo valor à propriedade cor
+    	minhaCaneta.cor = "azul";
+
+    	// Chamando o método escrever do objeto
+    	minhaCaneta.escrever();
+	}
+}
+
+Exemplo 3:
+// Definição da classe Computador
+class Computador {
+	// Propriedade marca da classe Computador
+	String marca;
+
+	// Método ligar da classe Computador
+	public void ligar() {
+    	System.out.println("O computador da marca " + marca + " está ligado.");
+	}
+}
+
+// Uso da classe Computador
+public class ExemploComputador {
+	public static void main(String[] args) {
+    	// Criando objeto da classe Computador
+    	Computador meuComputador = new Computador();
+
+    	// Atribuindo valor à propriedade marca
+    	meuComputador.marca = "Dell";
+
+    	// Chamando o método ligar do objeto
+    	meuComputador.ligar();
+	}
+}
+
+Exemplo 4:
+// Definição da classe Celular
+class Celular {
+	// Propriedade modelo da classe Celular
+	String modelo;
+
+	// Método fazerChamada da classe Celular
+	public void fazerChamada() {
+    	System.out.println("Fazendo uma chamada com o celular modelo " + modelo);
+	}
+}
+
+// Uso da classe Celular
+public class ExemploCelular {
+	public static void main(String[] args) {
+    	// Criando objeto da classe Celular
+    	Celular meuCelular = new Celular();
+
+    	// Atribuindo valor à propriedade modelo
+    	meuCelular.modelo = "iPhone";
+
+    	// Chamando o método fazerChamada do objeto
+    	meuCelular.fazerChamada();
+	}
+}
+
+Exemplo 5:
+// Definição da classe Aluno
+class Aluno {
+	// Propriedade nome da classe Aluno
+	String nome;
+
+	// Método estudar da classe Aluno
+	public void estudar() {
+    	System.out.println("O aluno " + nome + " está estudando.");
+	}
+}
+
+// Uso da classe Aluno
+public class ExemploAluno {
+	public static void main(String[] args) {
+    	// Criando objeto da classe Aluno
+    	Aluno aluno1 = new Aluno();
+
+    	// Atribuindo valor à propriedade nome
+    	aluno1.nome = "Maria";
+
+    	// Chamando o método estudar do objeto
+    	aluno1.estudar();
+	}
+}
+
+
+EXEMPLOS EM C++
+Exemplo 1:
+#include <iostream>
+
+// Definição da classe Cachorro
+class Cachorro {
+public:
+	// Método latir da classe Cachorro
+	void latir() {
+    	std::cout << "Au au!" << std::endl;
+	}
+};
+
+// Uso da classe Cachorro
+int main() {
+	// Criando objeto da classe Cachorro
+	Cachorro meuCachorro;
+
+	// Chamando o método latir do objeto
+	meuCachorro.latir();
+
+	return 0;
+}
+
+Exemplo 2:
+#include <iostream>
+
+// Definição da classe Caneta
+class Caneta {
+public:
+	// Propriedade cor da classe Caneta
+	std::string cor;
+
+	// Método escrever da classe Caneta
+	void escrever() {
+    	std::cout << "Escrevendo com uma caneta " << cor << std::endl;
+	}
+};
+
+// Uso da classe Caneta
+int main() {
+	// Criando objeto da classe Caneta
+	Caneta minhaCaneta;
+
+	// Atribuindo valor à propriedade cor
+	minhaCaneta.cor = "azul";
+
+	// Chamando o método escrever do objeto
+	minhaCaneta.escrever();
+
+	return 0;
+}
+
+
+Exemplo 3:
+#include <iostream>
+
+// Definição da classe Computador
+class Computador {
+public:
+	// Propriedade marca da classe Computador
+	std::string marca;
+
+	// Método ligar da classe Computador
+	void ligar() {
+    	std::cout << "O computador da marca " << marca << " está ligado." << std::endl;
+	}
+};
+
+// Uso da classe Computador
+int main() {
+	// Criando objeto da classe Computador
+	Computador meuComputador;
+
+	// Atribuindo valor à propriedade marca
+	meuComputador.marca = "Dell";
+
+	// Chamando o método ligar do objeto
+	meuComputador.ligar();
+
+	return 0;
+}
+
+Exemplo 4:
+#include <iostream>
+
+// Definição da classe Celular
+class Celular {
+public:
+	// Propriedade modelo da classe Celular
+	std::string modelo;
+
+	// Método fazerChamada da classe Celular
+	void fazerChamada() {
+    	std::cout << "Fazendo uma chamada com o celular modelo " << modelo << std::endl;
+	}
+};
+
+// Uso da classe Celular
+int main() {
+	// Criando objeto da classe Celular
+	Celular meuCelular;
+
+	// Atribuindo valor à propriedade modelo
+	meuCelular.modelo = "iPhone";
+
+	// Chamando o método fazerChamada do objeto
+	meuCelular.fazerChamada();
+
+	return 0;
+}
+
+Exemplo 5:
+#include <iostream>
+
+// Definição da classe Aluno
+class Aluno {
+public:
+	// Propriedade nome da classe Aluno
+	std::string nome;
+
+	// Método estudar da classe Aluno
+	void estudar() {
+    	std::cout << "O aluno " << nome << " está estudando." << std::endl;
+	}
+};
+
+// Uso da classe Aluno
+int main() {
+	// Criando objeto da classe Aluno
+	Aluno aluno1;
+
+	// Atribuindo valor à propriedade nome
+	aluno1.nome = "Maria";
+
+	// Chamando o método estudar do objeto
+	aluno1.estudar();
+
+	return 0;
+}
+
+
+Questão 2:
+Em Java uma variável é declarada especificando o tipo de dado seguido pelo nome da variável:
+TipoDeDado NomeDaVariavel;
+Exemplos de dados primitivos comuns em Java:
+int: números inteiros
+int numeroInteiro = 2;
+double: números de ponto flutuante de dupla precisão
+double numeroDecimal = 2.57;
+boolean: valores booleanos, ou seja, “true” ou “false”
+boolean verdadeiro = true;
+char: caractere Unicode
+char caractere = ‘A’;
+
+Apesar de semelhante, existem algumas diferenças na sintaxe e tipos de dados de C++. A declaração é feita:
+TipoDeDado NomeDaVariavel;
+int: números inteiros
+int numeroInteiro = 2;
+double: números de ponto flutuante de dupla precisão
+double numeroDecimal = 2.57;
+boolean: valores booleanos, ou seja, “true” ou “false”
+bool verdadeiro = true;
+char: caractere Unicode
+char caractere = ‘A’;
+
+Além disso, há outras diferenças como os tipos de dados para texto, em que em Java é usada a classe “String” enquanto que em C++ é usado “std::string” já que não existe um tipo de dado primitivo que represente strings.
+
+Questão 3:
+Herança é muito importante na programação orientada a objetos, já que esse conceito permite que classes, ou subclasses, herdem características e comportamentos de outra classe, chamada de superclasse. Através da herança a subclasse pode acessar e reutilizar atributos e métodos da superclasse, criando uma hierarquia de classes e reutilização de código, evitando repetições desnecessárias.
+
+Uma subclasse em Java é criada a partir da palavra “extends” conforme o exemplo abaixo: 
+// Superclasse
+class Animal {
+	void emitirSom() {
+    	System.out.println("Emitindo som genérico");
+	}
+}
+
+// Subclasse que herda de Animal
+class Cachorro extends Animal {
+	// A subclasse pode ter seus próprios membros
+	void latir() {
+    	System.out.println("Au au!");
+	}
+}
+
+// Uso da subclasse
+public class ExemploHeranca {
+	public static void main(String[] args) {
+    	Cachorro meuCachorro = new Cachorro();
+    	meuCachorro.emitirSom();  // Herdado da superclasse Animal
+    	meuCachorro.latir();  	// Próprio da subclasse Cachorro
+	}
+}
+
+Já em C++ é usada a palavra “public:” para criar uma herança pública conforme pode ser visto nos exemplos abaixo:
+#include <iostream>
+
+// Exemplo 1: Herança simples
+class Animal {
+public:
+	void emitirSom() {
+    	std::cout << "Emitindo som genérico" << std::endl;
+	}
+};
+
+class Cachorro : public Animal {
+public:
+	void latir() {
+    	std::cout << "Au au!" << std::endl;
+	}
+};
+
+// Exemplo 2: Herança com construtores
+class Veiculo {
+public:
+	Veiculo(int ano) : ano(ano) {}
+
+	void mostrarAno() {
+    	std::cout << "Ano do veículo: " << ano << std::endl;
+	}
+
+private:
+	int ano;
+};
+
+class Carro : public Veiculo {
+public:
+	Carro(int ano, std::string modelo) : Veiculo(ano), modelo(modelo) {}
+
+	void mostrarModelo() {
+    	std::cout << "Modelo do carro: " << modelo << std::endl;
+	}
+
+private:
+	std::string modelo;
+};
+
+// Exemplo 3: Herança com sobrescrita de método (polimorfismo)
+class Forma {
+public:
+	virtual void desenhar() {
+    	std::cout << "Desenhando forma" << std::endl;
+	}
+};
+
+class Circulo : public Forma {
+public:
+	void desenhar() override {
+    	std::cout << "Desenhando círculo" << std::endl;
+	}
+};
+
+// Exemplo 4: Herança múltipla
+class A {
+public:
+	void metodoA() {
+    	std::cout << "Método da classe A" << std::endl;
+	}
+};
+
+class B {
+public:
+	void metodoB() {
+    	std::cout << "Método da classe B" << std::endl;
+	}
+};
+
+class C : public A, public B {};
+
+// Exemplo 5: Herança protegida
+class Pai {
+protected:
+	void segredo() {
+    	std::cout << "Este é um segredo do Pai" << std::endl;
+	}
+};
+
+class Filho : protected Pai {
+public:
+	void revelarSegredo() {
+    	segredo();  // A subclasse pode acessar membros protegidos da superclasse
+	}
+};
+
+Questão 4:
+Ao declarar uma variável de um tipo de objeto em Java, é criada uma referência para esse objeto, que age como um ponteiro na memória heap. Porém, em Java não é possível lidar diretamente com ponteiros, alocação e desalocação de memória são gerenciadas a partir do coletor de lixo. Por exemplo:
+MinhaClasse objeto = nem MinhaClasse();
+Criando esse objeto como instância de uma classe, na verdade o objeto está sendo referenciado.
+
+Já em C++ ao declarar uma variável de um tipo de objeto, é possível estar criando uma instância real do objeto na memória ao invés de uma referência. Assim, é preciso gerenciar a alocação e desalocação na memória. Por exemplo:
+#include <iostream>
+
+class MinhaClasse {
+public:
+	void minhaFuncao() {
+    	std::cout << "Executando minhaFuncao" << std::endl;
+	}
+};
+
+int main() {
+	// Criando um objeto real (não uma referência)
+	MinhaClasse objeto;
+
+	// Chamando um método do objeto
+	objeto.minhaFuncao();
+
+	// Não é necessário liberar explicitamente a memória, pois o objeto será desalocado quando sair do escopo
+
+	return 0;
+}
+
+O usuário precisa alocar ou desalocar a memória de forma manual usando “new” e “delete”, o que possibilita maior controle sobre a gestão de memória mas aumenta o grau de dificuldade na escrita do código.
